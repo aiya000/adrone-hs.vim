@@ -21,6 +21,7 @@ let g:adronehs_data_dir = get(g:, 'adronehs_data_dir',
 
 command! -bar AdroneHsHome call adronehs#open_home_buffer()
 command! -bar AdroneHsSay  call adronehs#open_say_buffer()
+command! -bar -nargs=1 AdroneHsCommandSay call adronehs#say(<q-args>)
 
 
 " adrone-hs-home buffer's key mappings
